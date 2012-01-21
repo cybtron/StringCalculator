@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF26086A14CA6D070064135E /* StringCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = AF26086914CA6D070064135E /* StringCalculator.m */; };
 		AF4C909514C91746005EDAB2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF4C909414C91746005EDAB2 /* UIKit.framework */; };
 		AF4C909714C91746005EDAB2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF4C909614C91746005EDAB2 /* Foundation.framework */; };
 		AF4C909914C91746005EDAB2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF4C909814C91746005EDAB2 /* CoreGraphics.framework */; };
@@ -31,21 +32,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF26086814CA6D070064135E /* StringCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringCalculator.h; sourceTree = "<group>"; };
+		AF26086914CA6D070064135E /* StringCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringCalculator.m; sourceTree = "<group>"; };
 		AF4C909014C91746005EDAB2 /* StringCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StringCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF4C909414C91746005EDAB2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		AF4C909614C91746005EDAB2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AF4C909814C91746005EDAB2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		AF4C909C14C91746005EDAB2 /* StringCalculator-Info.plist */ = {isa = PBXFileReference; path = "StringCalculator-Info.plist"; sourceTree = "<group>"; };
+		AF4C909C14C91746005EDAB2 /* StringCalculator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StringCalculator-Info.plist"; sourceTree = "<group>"; };
 		AF4C909E14C91746005EDAB2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AF4C90A014C91746005EDAB2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AF4C90A214C91746005EDAB2 /* StringCalculator-Prefix.pch */ = {isa = PBXFileReference; path = "StringCalculator-Prefix.pch"; sourceTree = "<group>"; };
-		AF4C90A314C91746005EDAB2 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		AF4C90A214C91746005EDAB2 /* StringCalculator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StringCalculator-Prefix.pch"; sourceTree = "<group>"; };
+		AF4C90A314C91746005EDAB2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AF4C90A414C91746005EDAB2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		AF4C90AB14C91746005EDAB2 /* StringCalculatorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StringCalculatorTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF4C90AC14C91746005EDAB2 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		AF4C90B414C91746005EDAB2 /* StringCalculatorTests-Info.plist */ = {isa = PBXFileReference; path = "StringCalculatorTests-Info.plist"; sourceTree = "<group>"; };
+		AF4C90B414C91746005EDAB2 /* StringCalculatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StringCalculatorTests-Info.plist"; sourceTree = "<group>"; };
 		AF4C90B614C91746005EDAB2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AF4C90B814C91746005EDAB2 /* StringCalculatorTests.h */ = {isa = PBXFileReference; path = StringCalculatorTests.h; sourceTree = "<group>"; };
+		AF4C90B814C91746005EDAB2 /* StringCalculatorTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringCalculatorTests.h; sourceTree = "<group>"; };
 		AF4C90B914C91746005EDAB2 /* StringCalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringCalculatorTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +112,8 @@
 				AF4C90A314C91746005EDAB2 /* AppDelegate.h */,
 				AF4C90A414C91746005EDAB2 /* AppDelegate.m */,
 				AF4C909B14C91746005EDAB2 /* Supporting Files */,
+				AF26086814CA6D070064135E /* StringCalculator.h */,
+				AF26086914CA6D070064135E /* StringCalculator.m */,
 			);
 			path = StringCalculator;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 			files = (
 				AF4C90A114C91746005EDAB2 /* main.m in Sources */,
 				AF4C90A514C91746005EDAB2 /* AppDelegate.m in Sources */,
+				AF26086A14CA6D070064135E /* StringCalculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +420,7 @@
 				AF4C90BF14C91746005EDAB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AF4C90C014C91746005EDAB2 /* Build configuration list for PBXNativeTarget "StringCalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +429,7 @@
 				AF4C90C214C91746005EDAB2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

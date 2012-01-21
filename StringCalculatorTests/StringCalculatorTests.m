@@ -7,14 +7,15 @@
 //
 
 #import "StringCalculatorTests.h"
+#import "StringCalculator.h"
 
 @implementation StringCalculatorTests
 
+StringCalculator *calculator;
+int sum;
 - (void)setUp
 {
-    [super setUp];
-    
-    // Set-up code here.
+    calculator = [[StringCalculator alloc] init];
 }
 
 - (void)tearDown
@@ -24,9 +25,43 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void) test_NoNumber_ShouldReturnZero
 {
-    STFail(@"Unit tests are not implemented yet in StringCalculatorTests");
+    sum   = [calculator calculateSum:@""];
+    STAssertEquals(0, sum, @"The numbers should be the same");
 }
+
+- (void) test_OneNumber_ShouldReturnSameNumber
+{
+    sum   = [calculator calculateSum:@"1"];
+    STAssertEquals(1, sum, @"The numbers should be the same");
+    
+    sum   = [calculator calculateSum:@"2"];
+    STAssertEquals(2, sum, @"The numbers should be the same");
+    
+}
+
+- (void) test_TwoNumbersSeperatedByCommas_ShouldReturnTheirSum
+{
+    sum   = [calculator calculateSum:@"1,2"];
+    STAssertEquals(3, sum, @"The numbers should be the same");
+    
+    sum   = [calculator calculateSum:@"2,2"];
+    STAssertEquals(4, sum, @"The numbers should be the same");
+    
+}
+
+- (void) test_MultipleNumbersSeperatedByCommas_ShouldReturnTheirSum
+{
+    sum   = [calculator calculateSum:@"1,2,3"];
+    STAssertEquals(6, sum, @"The numbers should be the same");
+    
+    sum   = [calculator calculateSum:@"2,2,2,2,2"];
+    STAssertEquals(10, sum, @"The numbers should be the same");
+    
+}
+
+
+
 
 @end
