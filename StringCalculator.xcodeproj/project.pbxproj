@@ -194,7 +194,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0420;
-				ORGANIZATIONNAME = "HSG Corporation";
+				ORGANIZATIONNAME = "HG Corporation";
 			};
 			buildConfigurationList = AF4C908A14C91745005EDAB2 /* Build configuration list for PBXProject "StringCalculator" */;
 			compatibilityVersion = "Xcode 3.2";

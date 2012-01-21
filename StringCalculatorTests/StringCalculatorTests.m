@@ -3,7 +3,7 @@
 //  StringCalculatorTests
 //
 //  Created by Hasaan Gilani on 1/19/12.
-//  Copyright (c) 2012 HSG Corporation. All rights reserved.
+//  Copyright (c) 2012 HG Corporation. All rights reserved.
 //
 
 #import "StringCalculatorTests.h"
@@ -16,13 +16,6 @@ int sum;
 - (void)setUp
 {
     calculator = [[StringCalculator alloc] init];
-}
-
-- (void)tearDown
-{
-    // Tear-down code here.
-    
-    [super tearDown];
 }
 
 - (void) test_NoNumber_ShouldReturnZero
@@ -38,7 +31,6 @@ int sum;
     
     sum   = [calculator calculateSum:@"2"];
     STAssertEquals(2, sum, @"The numbers should be the same");
-    
 }
 
 - (void) test_TwoNumbersSeperatedByCommas_ShouldReturnTheirSum
@@ -48,7 +40,6 @@ int sum;
     
     sum   = [calculator calculateSum:@"2,2"];
     STAssertEquals(4, sum, @"The numbers should be the same");
-    
 }
 
 - (void) test_MultipleNumbersSeperatedByCommas_ShouldReturnTheirSum
@@ -60,8 +51,5 @@ int sum;
     STAssertEquals(10, sum, @"The numbers should be the same");
     
 }
-
-
-
 
 @end
