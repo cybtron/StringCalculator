@@ -10,6 +10,6 @@
 
 @interface StringCalculator : NSObject
 
--(int) calculateSum: (NSString *)numbers;
+-(int) add: (NSString *)numbers;
 
 @end

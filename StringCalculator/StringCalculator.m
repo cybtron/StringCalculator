@@ -10,6 +10,8 @@
 
 @implementation StringCalculator
 
+NSString *delimeter_list = @"\n,";
+
 - (int)handleEmptyString
 {
     return 0;
@@ -20,17 +22,23 @@
     return [numbers intValue];
 }
 
+- (NSArray *)obtainNumbersToBeAddedFrom:(NSString *)numbers
+{
+    NSCharacterSet *characterSet = [NSCharacterSet characterSetWithCharactersInString:delimeter_list];
+    return [numbers componentsSeparatedByCharactersInSet:characterSet];
+}
+
 - (int)handleStringWithMultipleNumbers:(NSString *)numbers
 {
-    NSArray *numberArray =  [numbers componentsSeparatedByString:@","];
+    NSArray *numberArray = [self obtainNumbersToBeAddedFrom:numbers];
     int sum = 0;
-    for (NSString* number in numberArray) {
+    for (NSString *number in numberArray) {
         sum += [number intValue];
     }
     return sum;
 }
 
--(int) calculateSum:(NSString *)numbers
+-(int) add:(NSString *)numbers
 {
     if (numbers.length == 0) {
         return [self handleEmptyString];
